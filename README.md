@@ -2,15 +2,14 @@
 
 ## Getting Started
 
-    ```
-    npm i @eatsjobs/ts-pattern-matching
-    ```
+```sh
+npm i @eatsjobs/ts-pattern-matching
+```
 
 ## Usage
 
-  ```
-  import match from "@eatsjobs/ts-pattern-matching"
-
+```typescript
+  import match from "@eatsjobs/ts-pattern-matching";
   const predicate = (input) => {
     return input.a
   };
@@ -25,4 +24,4 @@
     .otherwise(() => {}) // default handler
     .run();
 
-  ```
+```
