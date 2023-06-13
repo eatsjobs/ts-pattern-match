@@ -6,7 +6,7 @@ export interface Match<Input, Output> {
   run: () => Output;
   otherwise: (handler: Handler<Input, Output>) => this;
 }
-
+// small change
 function match<Input, Output>(value: Input): Match<Input, Output> {
   const cases = new Set<[Predicate<Input>, Handler<Input, Output>]>();
   let defaultHandler: Handler<Input, Output>;
