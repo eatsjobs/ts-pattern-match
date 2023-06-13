@@ -1,7 +1,7 @@
-type Predicate<Input> = (v: Input) => boolean;
-type Handler<Input, Output> = (v: Input) => Output;
+export type Predicate<Input> = (v: Input) => boolean;
+export type Handler<Input, Output> = (v: Input) => Output;
 
-interface Match<Input, Output> {
+export interface Match<Input, Output> {
   when: (predicate: Predicate<Input>, handler: Handler<Input, Output>) => this;
   run: () => Output;
   otherwise: (handler: Handler<Input, Output>) => this;
